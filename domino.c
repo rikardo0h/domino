@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -121,8 +122,8 @@ int main()
 	}
    	
 	
-	printf("Tamaño= %i",lista->tamano/2);
-	printf("Tamaño= %i",lista2->tamano/2);
+	printf("TamaÃ±o= %i",lista->tamano/2);
+	printf("TamaÃ±o= %i",lista2->tamano/2);
 	int menu;
 	int e1=0,e2=0;
 	int lado,otroLado,op;
@@ -191,7 +192,7 @@ int main()
 							printf("\n -------------- Juego -------- \n");								
 						}else{
 							if((e1==juego->fin->dato)||(e1==juego->inicio->dato)||(e2==juego->fin->dato)||(e2==juego->inicio->dato)){
-								printf("¿Qué lado usaras? Izquiera o derecha    %i || %i",e1,e2);								
+								printf("Â¿QuÃ© lado usaras? Izquiera o derecha    %i || %i",e1,e2);								
 								printf("\n 1- Izquieerda %i ",e1);
 								printf("\n 2- Derecha %i ",e2);
 								scanf ("%i", &lado);								
@@ -214,7 +215,7 @@ int main()
 									}									
 								}
 								
-								printf("\n  ¿En que lado pondras la ficha?");
+								printf("\n  Â¿En que lado pondras la ficha?");
 								printf("\n 1- izquiera = %i ",juego->inicio->dato);
 								printf("\n 2- Derecha = %i ",juego->fin->dato);
 								scanf ("%i", &op);								
@@ -313,7 +314,7 @@ int main()
 							printf("\n -------------- Juego -------- \n");								
 						}else{
 							if((e1==juego->fin->dato)||(e1==juego->inicio->dato)||(e2==juego->fin->dato)||(e2==juego->inicio->dato)){
-								printf("¿Qué lado usaras? Izquiera o derecha    %i || %i",e1,e2);								
+								printf("Â¿QuÃ© lado usaras? Izquiera o derecha    %i || %i",e1,e2);								
 								printf("\n 1- Izquieerda %i ",e1);
 								printf("\n 2- Derecha %i ",e2);
 								scanf ("%i", &lado);								
@@ -336,7 +337,7 @@ int main()
 									}									
 								}
 								
-								printf("\n  ¿En que lado pondras la ficha?");
+								printf("\n  Â¿En que lado pondras la ficha?");
 								printf("\n 1- izquiera = %i ",juego->inicio->dato);
 								printf("\n 2- Derecha = %i ",juego->fin->dato);
 								scanf ("%i", &op);								
@@ -399,7 +400,7 @@ void incializacion(Lista *lista){
     lista->tamano = 0;    
 }
  
-/*Inserción en una lista vacía */
+/*InserciÃ³n en una lista vacÃ­a */
 int InsercionEnListaVacia(Lista *lista, int dato,int mul){
     Elemento *nuevo_elemento;
     
@@ -547,7 +548,7 @@ void Push(Pila *pila, int frente,int atras,int mul) {
    nuevo->atras = atras;
    nuevo->mula = mul;
    
-   /* Añadimos la pila a continuación del nuevo nodo */
+   /* AÃ±adimos la pila a continuaciÃ³n del nuevo nodo */
    nuevo->siguiente = *pila;
    /* Ahora, el comienzo de nuestra pila es en nuevo nodo */
    *pila = nuevo;
